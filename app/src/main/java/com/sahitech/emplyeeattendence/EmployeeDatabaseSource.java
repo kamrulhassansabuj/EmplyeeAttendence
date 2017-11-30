@@ -58,13 +58,13 @@ public class EmployeeDatabaseSource {
         this.open();
 
         ContentValues values = new ContentValues();
-        //values.put(EmployeeDatabaseHelper.EMPLOYEE_COL_ID,employee.getemployeeId());
+        values.put(EmployeeDatabaseHelper.EMPLOYEE_COL_ID,employee.getemployeeId());
         values.put(EmployeeDatabaseHelper.EMPLOYEE_COL_NAME,employee.getemployeeName());
         values.put(EmployeeDatabaseHelper.EMPLOYEE_COL_ATTENDENCE,employee.getattendence());
         values.put(EmployeeDatabaseHelper.EMPLOYEE_COL_PERMISSION,employee.getpermission());
 
 
-        int updatedValue =db.update(EmployeeDatabaseHelper.TABLE_EMPLOYEE,values,EmployeeDatabaseHelper.EMPLOYEE_COL_ID,new String[] {String.valueOf(employee.getemployeeId())});
+        int updatedValue =db.update(EmployeeDatabaseHelper.TABLE_EMPLOYEE,values,EmployeeDatabaseHelper.EMPLOYEE_COL_ID+" =? ",new String[] {String.valueOf(employee.getemployeeId())});
 
         //update dosen't work
 

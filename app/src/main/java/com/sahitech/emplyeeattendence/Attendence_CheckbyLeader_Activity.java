@@ -39,7 +39,7 @@ public class Attendence_CheckbyLeader_Activity extends AppCompatActivity {
         employee = (Employee) getIntent().getSerializableExtra("employee");
         if (employee !=null){
 
-            saveBtn.setText("OK");
+
             nameET.setText(employee.getemployeeName());
             attendenceET.setText(employee.getattendence());
             permissionET.setText(String.valueOf(employee.getpermission()));
@@ -52,5 +52,32 @@ public class Attendence_CheckbyLeader_Activity extends AppCompatActivity {
     
     public void show(View view) {
         startActivity(new Intent(Attendence_CheckbyLeader_Activity.this,EmployeeListActivity.class));
+    }
+
+    public void updateEmploye(View view) {
+
+
+         do {
+            String name = nameET.getText().toString();
+            String att = attendenceET.getText().toString();
+            String per = permissionET.getText().toString();
+
+
+            Employee employee = new Employee(name, att, per);
+            boolean status = employeeDatabaseSource.updateEmployee(employee);
+
+            if (status) {
+                Toast.makeText(this, "updated", Toast.LENGTH_SHORT).show();
+            } else {
+
+                Toast.makeText(this, "could not updated", Toast.LENGTH_SHORT).show();
+            }
+        }while (employee != null);
+
+
+
+    }
+
+    public void deleteEmploye(View view) {
     }
 }

@@ -50,7 +50,7 @@ public class Attendence_Activity extends AppCompatActivity {
     }
 
     public void saveEmployee(View view) {
-
+/*
         if (employee != null) {
             String name = nameET.getText().toString();
             String att = attendenceET.getText().toString();
@@ -67,7 +67,7 @@ public class Attendence_Activity extends AppCompatActivity {
                 Toast.makeText(this, "could not updated", Toast.LENGTH_SHORT).show();
             }
 
-        } else {
+        } else {*/
             String name = nameET.getText().toString();
             String att = attendenceET.getText().toString();
             String per = permissionET.getText().toString();
@@ -90,4 +90,4 @@ public class Attendence_Activity extends AppCompatActivity {
         }
     }
 
-}
+

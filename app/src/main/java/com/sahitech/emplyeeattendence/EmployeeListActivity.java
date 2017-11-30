@@ -33,7 +33,7 @@ public class EmployeeListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                  Employee employee = employeeList.get(i);
-                startActivity(new Intent(EmployeeListActivity.this,Attendence_Activity.class).putExtra("employee",employee));
+                startActivity(new Intent(EmployeeListActivity.this,Attendence_CheckbyLeader_Activity.class).putExtra("employee",employee));
             }
         });
     }

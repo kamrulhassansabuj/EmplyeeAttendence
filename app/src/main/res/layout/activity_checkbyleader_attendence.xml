@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.sahitech.emplyeeattendence.Attendence_CheckbyLeader_Activity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Present = P"
+        android:gravity="right"
+        android:layout_marginRight="10sp"
+
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Late = L"
+        android:gravity="right"
+        android:layout_marginRight="10sp"
+
+        android:textSize="25sp"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Absent = A"
+        android:gravity="right"
+        android:layout_marginRight="10sp"
+
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Holiday = H"
+        android:gravity="right"
+        android:layout_marginRight="10sp"
+
+        android:textSize="25sp"/>
+
+
+    <EditText
+        android:id="@+id/employeeNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"/>
+
+    <EditText
+        android:id="@+id/employeeAttendenceET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Attendence"/>
+
+    <EditText
+        android:id="@+id/employeePermissionET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter No"/>
+    <TextView
+        android:id="@+id/msgtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/showBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:onClick="show"/>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        android:onClick="updateEmploye"
+        />
+
+
+</LinearLayout>

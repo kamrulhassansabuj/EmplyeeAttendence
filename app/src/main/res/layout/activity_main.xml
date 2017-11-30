@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.sahitech.emplyeeattendence.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/EmplyeeBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Employee"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/GroupLeaderBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Group Leader"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/HRBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="HR"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
